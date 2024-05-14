@@ -1,0 +1,155 @@
+/* Product.css */
+
+/* Container styles */
+.products-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title styles */
+.products-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card wrapper styles */
+.product-card-wrapper {
+  margin: 0 10px; /* Add margin to create gap between cards */
+}
+
+/* Card styles */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20vw;
+  height: 40vh;
+}
+
+/* Card image styles */
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Card body styles */
+.product-card .card-body {
+  padding: 20px;
+}
+
+/* Card title styles */
+.product-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Card text styles */
+.product-card .card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.p {
+  margin-left: 350px; /* Adjust the margin as needed */
+  font-size: 36px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+  color:black; /* Set the text color */
+  position: relative; /* Position relative for absolute positioning of pseudo-element */
+  display: inline-block; /* Allow pseudo-element to wrap around text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  
+  
+}
+
+.p::after {
+  content: ''; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align it with the left side of the text */
+  bottom: -2px; /* Position it slightly below the text */
+  width: 0%; /* Initially, the width is 0 */
+  height: 2px; /* Set the height of the underline */
+  background-color: red; /* Set the color of the underline */
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.p:hover::after {
+  width: 100%; /* Increase the width to 100% on hover */
+}
+
+
+/* Button styles */
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 991px) {
+  .products-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+  }
+  
+  /* Title styles */
+  .products-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Carousel container */
+  .slick-slider {
+    width: 100%; /* Ensure the carousel takes full width */
+  }
+  
+
+  .product-card {
+    width: calc(50% - 20px); /* Adjusted width for smaller devices */
+    margin-left: 0; /* Remove left margin for proper alignment */
+  }
+
+  .product-card:nth-child(odd) {
+    clear: left; /* Clear left for odd cards to align properly */
+  }
+
+  .product-card .card-body {
+    padding: 15px; /* Adjust padding for smaller devices */
+  }
+
+  .product-card button {
+    padding: 8px 15px; /* Adjust button padding for smaller devices */
+    font-size: 14px; /* Decrease font size for smaller devices */
+  }
+
+  .product-card .card-title {
+    font-size: 16px; /* Decrease card title font size for smaller devices */
+  }
+
+  .product-card .card-text {
+    font-size: 14px; /* Decrease card text font size for smaller devices */
+  }
+  .p {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+}

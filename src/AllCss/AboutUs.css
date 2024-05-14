@@ -1,0 +1,106 @@
+.about-us-container {
+  padding: 50px;
+  background-color: skyblue; /* Light blue background color */
+  font-family: Arial, sans-serif; /* Specify the font family */
+}
+
+.about-us-content {
+  width: 100vw;
+  margin: 0 auto;
+  animation: fadeInUp 2s ease-out;
+  display: flex;
+}
+
+.about-us-image img {
+  width: 80; /* Make the image fluid within its container */
+   /* Limit image width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Reset margin */
+  margin-left: 5%;
+}
+
+.about-us-text {
+  flex: 1;
+  margin-left: 20px; /* Adjust the spacing between image and text */
+}
+
+.about-us-text h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.About {
+  margin-left: 40%;
+}
+
+.about-us-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444; /* Slightly darker text color for better readability */
+  margin-bottom: 15px;
+  padding: 0 20px; /* Add padding to the paragraphs */
+}
+
+.about-us-text p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last paragraph */
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    width: 281vw;
+  }
+
+  .about-us-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    margin-right: 15%;
+  }
+
+  .image1{
+  width: 100%;
+  height: 50%;
+  }
+
+  .About{
+    margin-right: 120px;
+  }
+  .about-us-text {
+    text-align: center; /* Center text content */
+    margin-top: 20px; /* Add some space between image and text */
+    
+  }
+
+  .about-us-text h2 {
+    font-size: 24px; /* Decrease heading size for smaller screens */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .about-us-text p {
+    font-size: 18px; /* Decrease paragraph font size */
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    max-height: 200px; /* Adjust this value as needed */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds max-height */
+    margin: 0 auto;/* Adjust paragraph padding */
+   
+  }
+}

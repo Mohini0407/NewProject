@@ -1,0 +1,125 @@
+/* Reset default margins and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #002244; 
+  color: #ffffff; 
+  padding: 30px 0; 
+  width: 100%; /* Full width */
+}
+
+/* Center the container horizontally and adjust padding */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+/* Footer box styles */
+
+
+
+
+
+
+
+
+/* Footer box styles */
+.footer-box {
+  width: 100%; /* Each box takes 20% of the width of the container with a small margin */
+  height: 50%; /* Set the height of the boxes */
+  margin-right: 0; /* Add some space between boxes */
+  
+}
+
+
+.box {
+  margin-right: 0; /* Reset margin */
+}
+
+.ox {
+  margin-right: 0; /* Reset margin */
+}
+
+.foot {
+  margin-right: 0; /* Reset margin */
+}
+
+.foo {
+  margin-right: 0; /* Reset margin */
+}
+
+/* Adjust column widths and spacing */
+.col-md-3 {
+  width: 20%; /* Each column takes 20% of the width of the container */
+  padding: 0 10px; /* Add spacing between columns */
+}
+
+/* Adjust the order of columns for responsiveness */
+
+
+just column widths and spacing */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.col-md-3 h4 {
+  margin-top: 0; /* Remove top margin for headings */
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Adjust text color for paragraphs */
+p {
+  color: #cccccc;
+}
+
+/* Copyright text */
+.text-center p {
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Adjust the order of columns for responsiveness */
+@media (max-width: 991px) {
+  .col-md-3:nth-child(4) {
+    order: 4;
+  }
+  .footer-box {
+   width: 20vh; /* Add space between footer boxes */
+  }
+
+  .col-md-3:nth-child(5) {
+    order: 3;
+  }
+  .footer {
+    padding: 30px 0; 
+    width: 191VW;
+  }
+  .social-icons {
+    margin-top: 15px; /* Adjust the margin to push social icons down */
+  }
+
+  .col-md-3 {
+    width: 100vw; /* Full width for each column on smaller screens */
+    margin-bottom: 20px; /* Add some space between columns on smaller screens */
+  }
+}

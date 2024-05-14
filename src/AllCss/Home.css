@@ -1,0 +1,146 @@
+.image-container {
+  position: relative;
+  margin-top: -14px;
+}
+
+.image {
+  width: 100vw; /* Make the image responsive */
+  height: 100vh; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-left: -400px;
+  margin-top: -200px;
+}
+
+.text-overlay h1 {
+  font-size: 24px;
+  color: green;
+}
+
+.text-overlay p {
+  font-size: 40px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+/* Navbar Styles */
+.head {
+  background-color: #002244;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust the width as needed */
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #007bff;
+}
+
+.logo-circle:before {
+  content: 'VMC';
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nlink {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative; /* Ensure proper positioning of the underline */
+}
+
+.nlink::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: lightblue;
+  transition: width 0.2s ease; /* Add a smooth transition effect */
+}
+
+.nlink:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+  .text-overlay {
+    margin-left: -300px;
+    margin-top: -100px;
+    
+  }
+  
+  .head {
+    width: 100%; /* Adjust the width as needed */
+  }
+
+  .nlink {
+    margin: 10px 0;
+    display: block; /* Display links as block elements */
+  }
+
+  .text-overlay h1 {
+    font-size: 18px;
+    margin-left: 60px;
+  }
+
+  .text-overlay p {
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .image-container {
+    position: relative;
+    margin-top: -14px;
+  }
+  
+  .image {
+    width: 257vw; /* Make the image responsive */
+    height: 57vh; /* Maintain aspect ratio */
+    margin-left: 90px;
+    object-fit: cover;
+  }
+
+  .head {
+    background-color:#002244;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:230vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  
+  .text-overlay {
+    margin-left: -100px;
+    margin-top: -50px;
+  }
+
+  .text-overlay h1 {
+    font-size: 14px;
+  }
+
+  .text-overlay p {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+}
